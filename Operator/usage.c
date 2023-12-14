@@ -39,6 +39,5 @@ int main()
     printf("%d\n", c^d); 
     printf("%d\n", ~d); 
     printf("%d\n", d<<2); 
-    printf("%d\n", d>>1);
     return 0;
 }
