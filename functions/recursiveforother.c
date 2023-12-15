@@ -40,6 +40,7 @@ int main()
     int n,a,b,c,d;
     printf("Press \n1 for Fibonacci\n2 for factorial\n3 for power calculation\n= ");
     scanf("%d",&n);
+
     switch(n)
     {
         case 1: printf("For Fibonacci Series: "); 
@@ -49,11 +50,13 @@ int main()
         fibo(n,x,y);
         return 0;
 
+
         case 2:printf("For Factorial Value: ");
         printf("Enter the value: ");
         scanf("%d",&b);
         factorial(b);
         return 0;
+
 
         case 3:printf("For Power calculation: ");
         printf("Enter the number: ");
@@ -62,8 +65,5 @@ int main()
         scanf("%d",&d);
         printf("%d",power(c,d));
         return 0;
-
-
-    
     }
 }
