@@ -3,7 +3,7 @@
 
 int main() 
 {
-    int n,fib,x=0,y=1;
+    int n,fib=0,x=0,y=1;
     printf("Enter the value till you want fibbonacci series: ");
     scanf("%d",&n);
     for(int i=0;i<n;i++)
