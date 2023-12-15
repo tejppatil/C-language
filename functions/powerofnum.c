@@ -1,8 +1,13 @@
 //Write a program that calculates the power of a number using a user-defined function
 #include<stdio.h>
-void power(int m,int n)
+int power(int a,int b)
 {
-
+    if(b==0)
+        return 1;
+    else if(a==0)
+        return 0;
+    else
+        return a*power(a,b-1);
 }
 int main()
 {
@@ -11,6 +16,5 @@ int main()
    scanf("%d",&a);
    printf("Enter the power of number: ");
    scanf("%d",&b);
-   power(m,n);
-   printf("The value of power is %d",power(m,n))
+   printf("The value of power is %d",power(a,b));
 }
