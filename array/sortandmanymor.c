@@ -2,7 +2,7 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,s,j,r;
+    int n,i,s,j,r,k,count;
     printf("Enter the size of array: ");
     scanf("%d",&n);
     int a[n];
@@ -17,7 +17,47 @@ int main()
     {
         printf("%d, ",a[s]);
     }
-    printf("%d",a[s]);
+    for(s=i-1;s<i;s++)
+    {
+        printf("%d",a[s]);
+    }
     printf("]");
+    for(r=0, count; r<=s; r++)
+    {
+        if(count!=0)
+        {
+            for(int temp, count=0, k=0; k<=s-1; k++)
+            {
+                if (a[k] >= a[k+1])
+                {
+                    temp=a[k];
+                    a[k]=a[k+1];
+                    a[k+1]=temp;
+                    count=1;
+                }
+            }
+        }
+        else
+        {
+            break;
+        }
+        
+    }
+    printf("\n");
+            
+
+    printf("New 1d array is: \n");
+
+    printf("[");
+    for(i=0; i<s-1; i++)
+    {
+        printf("%d, ", a[i]);
+    }
+    for(i=s-1; i<s; i++)
+    {
+        printf("%d", a[i]);
+    }
+    printf("]");
+    return 0;
 
 }
