@@ -22,6 +22,7 @@ int main()
         printf("%d",a[s]);
     }
     printf("]");
+    printf("\n");
     //for reverse printing
     for(i=0;i<n/2;i++)
     {
@@ -29,7 +30,7 @@ int main()
         a[i]=a[n-1-i];
         a[n-1-i]=reverse;
     }
-    printf("Reversed Array:\n");
+    printf("Reversed Array:-");
     printf("[");
     for(s=0;s<n-1;s++)
     {
@@ -40,6 +41,5 @@ int main()
         printf("%d",a[s]);
     }
     printf("]");
-
     return 0;
 }
