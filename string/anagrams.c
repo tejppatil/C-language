@@ -12,8 +12,8 @@ int main()
     printf("Enter second string: ");
     scanf("%s", s2); 
 
-    l1 = strlen(s1);
-    l2 = strlen(s2);
+    l1 = sl(s1);
+    l2 = sl(s2);
 
     if (l1 == l2) 
     {
