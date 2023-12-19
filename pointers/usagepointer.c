@@ -1,11 +1,11 @@
 //Write programs to demonstrate the usage of pointers (pointer arithmetic, passing pointers to functions).
 #include <stdio.h>
-int swap(int *x, int *y) 
+void doubleArray(int *a, int n) 
 {
-    int t = *x;
-    *x = *y;
-    *y = t;
-    printf("Inside swap function: x=%d, y=%d\n", *x, *y);
+    for (int i=0;i<n;i++) 
+    {
+        *(a+i)*=2;
+    }
 }
 int main() 
 {
@@ -24,11 +24,21 @@ int main()
     {
         printf("%d ", *(ptr + i));
     }
-    printf("\n");
+    printf("\n\n");
     printf("For Pointer Passing to array...\n");
-    int a = 10, b = 20;
-    printf("Before swap: a=%d, b=%d\n", a, b);
-    swap(&a, &b);
-    printf("After swap: a=%d, b=%d\n", a, b);
-    return 0;
+     int number[] = {1, 2, 3, 4, 5};
+    int n = sizeof(numbers) / sizeof(number[0]);
+
+    printf("Original array: ");
+    for (int i = 0; i < n; i++) 
+    {
+        printf("%d ", number[i]);
+    }
+    printf("\n");
+    doubleArray(number, n);
+    printf("Array after doubling elements: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", number[i]);
+    }
+    printf("\n");
 }
