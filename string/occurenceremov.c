@@ -1,6 +1,6 @@
 //Implement a program that removes all occurrences of a specified character from a string.
 #include <stdio.h>
-void removeCharacter(char *s, char target) 
+int removeCharacter(char *s, char target) 
 {
     int i, j;
     for (i=0,j=0;s[i]!=0; i++) 

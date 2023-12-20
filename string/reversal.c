@@ -1,8 +1,7 @@
 //Implement programs for string reversal
 #include <stdio.h>
 #include <string.h>
-
-void revs(char *s) 
+int revs(char *s) 
 {
     int length = strlen(s);
     for (int i=0,j=length-1;i<j;i++,j--) 

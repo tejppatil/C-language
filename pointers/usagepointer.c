@@ -1,6 +1,6 @@
 //Write programs to demonstrate the usage of pointers (pointer arithmetic, passing pointers to functions).
 #include <stdio.h>
-void doubleArray(int *a, int n) 
+int doubleArray(int *a, int n) 
 {
     for (int i=0;i<n;i++) 
     {

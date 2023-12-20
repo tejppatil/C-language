@@ -4,6 +4,7 @@
 
 int main() 
 {
+   
    char s[100];
    int i;
 

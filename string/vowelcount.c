@@ -1,6 +1,5 @@
 //Write a program to count the number of vowels and consonants in a given string.
 #include <stdio.h>
-
 int main() 
 {
     char s[100];

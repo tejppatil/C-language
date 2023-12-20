@@ -1,7 +1,6 @@
 //Create programs to perform string manipulation (concatenation, copying).
 #include <stdio.h>
 #include <string.h>
-
 int main() 
 {
     printf("For concatenation:>\n");
@@ -20,3 +19,4 @@ int main()
     printf("Copied string: %s\n", s1);
     return 0;
 }
+
