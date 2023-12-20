@@ -2,36 +2,30 @@
 #include <stdio.h>
 #include <limits.h>
 
-int main() {
+int main() 
+{
     int maxn = 10;
     int array[maxn];
     int n = 0;
-
-    // Read the size of the array from the user
     printf("Enter the size of the array (max %d): ", maxn);
     scanf("%d", &n);
-
-    // Read array elements from the user
     printf("Enter %d elements for the array:\n", n);
-    for (int i = 0; i < n; i++)
+    for (int i=0;i<n;i++)
         scanf("%d", &array[i]);
-
-    // Calculate and display sum, average, maximum, and minimum
-    int sum = 0; 
-    for (int i = 0; i < n; i++) 
+    int sum=0; 
+    for (int i=0;i<n;i++) 
     {
-        sum += array[i];
+        sum=sum+array[i];
     }
     printf("Sum: %d\n",sum);
     int add = 0; 
-    for (int i = 0; i < n; i++) 
+    for (int i=0;i<n;i++) 
     {
-        add += array[i];
+        add=add+array[i];
     }
     printf("Average: %.2f\n",(double)add / n);
-
     int max = INT_MIN; 
-    for (int i = 0; i < n; i++) 
+    for (int i=0;i<n;i++) 
     {
         if (array[i] > max) 
         max = array[i];

@@ -1,6 +1,5 @@
 //Write programs to manipulate arrays (sorting, searching, insertion, deletion).
 #include <stdio.h>
-
 int Search(int a[], int n, int searched) 
 {
     for (int i = 0; i < n; i++) 
