@@ -7,10 +7,10 @@ int Search(int a[], int n, int searched)
     {
         if (a[i] == searched) 
         {
-            return i;  // Return the index if the target is found
+            return i;  
         }
     }
-    return -1;  // Return -1 if the target is not found
+    return -1;  
 }
 
 int main() 

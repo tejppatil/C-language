@@ -3,15 +3,14 @@
 void removeCharacter(char *s, char target) 
 {
     int i, j;
-    for (i = 0, j = 0; s[i] != '\0'; i++) 
+    for (i = 0, j = 0; s[i]!='\0'; i++) 
     {
-        if (s[i] != target) 
+        if (s[i]!=target) 
         {
-            s[j++] = s[i];
+            s[j++]=s[i];
         }
     }
-    // Add null terminator to the end of the modified string
-    s[j] = '\0';
+    s[j]='\0';
 }
 
 int main() 

@@ -9,7 +9,6 @@ int main()
 
    printf("\nEnter a string : ");
    scanf("%s",s);
-
    for (i = 0; s[i]!='\0'; i++) 
    {
       if(s[i] >= 'A' && s[i] <= 'Z') 
