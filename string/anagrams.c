@@ -11,31 +11,29 @@ int main()
     scanf("%s", s1);  
     printf("Enter second string: ");
     scanf("%s", s2); 
-
     l1 = sl(s1);
     l2 = sl(s2);
-
-    if (l1 == l2) 
+    if (l1==l2) 
     {
         l = l1;
-        for (i = 0; i < l; i++) 
+        for (i=0;i<l;i++) 
         {
-            f1 = 0;
-            for (j = 0; j < l; j++) 
+            f1=0;
+            for(j=0;j<l;j++) 
             {
-                if (s1[i] == s2[j]) 
+                if(s1[i]==s2[j]) 
                 {
-                    f1 = 1;
+                    f1=1;
                     break;
                 }
             }
-            if (f1 == 0) 
+            if(f1==0) 
             {
-                f2 = 1;
+                f2=1;
                 break;
             }
         }
-        if (f2 == 1)
+        if (f2==1)
             printf("\nStrings are not Anagram");
         else
             printf("\nStrings are Anagram");

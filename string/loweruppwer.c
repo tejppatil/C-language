@@ -9,19 +9,19 @@ int main()
 
    printf("\nEnter a string : ");
    scanf("%s",s);
-   for (i = 0; s[i]!='\0'; i++) 
+   for (i=0;s[i]!=0;i++) 
    {
-      if(s[i] >= 'A' && s[i] <= 'Z') 
+      if(s[i]>='A' && s[i]<='Z') 
       {
-         s[i] = s[i] + 32;
+         s[i]=s[i]+32;
       }
    }
    printf("\nString in Lower Case = %s", s);
-   for (i = 0; s[i]!='\0'; i++) 
+   for (i=0;s[i]!=0;i++) 
    {
-      if(s[i] >= 'a' && s[i] <= 'z') 
+      if(s[i]>='a' && s[i]<='z') 
       {
-         s[i] = s[i] - 32;
+         s[i]=s[i]-32;
       }
    }
    printf("\nString in Upper Case = %s", s);
