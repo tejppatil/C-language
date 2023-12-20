@@ -4,7 +4,7 @@ int fibo(int a,int x,int y)
 {
     int fib=0;
     x=0;y=1;
-    for(int i=0;i<=a;i++)
+    for(int i=0;i<a;i++)
     {
         printf("%d\n",fib);
         x=y;
@@ -47,7 +47,7 @@ int main()
         int x,y,fib=0;
         printf("Enter the value: ");
         scanf("%d",&a);
-        fibo(n,x,y);
+        fibo(a,x,y);
         return 0;
 
 

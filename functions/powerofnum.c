@@ -17,4 +17,5 @@ int main()
    printf("Enter the power of number: ");
    scanf("%d",&b);
    printf("The value of power is %d",power(a,b));
+   return 0;
 }
