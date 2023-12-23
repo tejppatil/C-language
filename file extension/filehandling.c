@@ -22,10 +22,16 @@ int main()
             ptr[i]=i+1;
         }
         printf("The elements of the array are: ");
-        for (i=0;i<n;++i) 
+        printf("[");
+        for (i=0;i<n-1;++i) 
         {
             printf("%d, ",ptr[i]);
         }
+        for (i=n-1;i<n;++i)
+        {
+            printf("%d]",ptr[i]);
+        }
+
     }
     return 0;
 }
