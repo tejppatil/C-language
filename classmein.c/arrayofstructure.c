@@ -16,7 +16,8 @@ int main()
         scanf("%s",c[i].name);
         scanf("%d",&c[i].weight);
     }
-    for(i=0;i<4;i++){
+    for(i=0;i<4;i++)
+    {
         w=w+c[i].weight;
     }
     printf("%d",w);
