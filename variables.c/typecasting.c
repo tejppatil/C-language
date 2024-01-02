@@ -21,6 +21,5 @@ int main()
     printf("Typecasted value of y1 is %c\n",y1);
     printf("Typecasted value of x2 is %f\n",x2);
     printf("Typecasted value of y2 is %f\n",y2);
-    
     return 0;
 }
