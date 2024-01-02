@@ -9,7 +9,7 @@ int main()
     scanf("%d",&b);
     printf("a=%d,b=%d\n",a,b);
 
-    //arithmetic operator
+    //arithmetic operator  
     //unary
     printf("For Unary Arithmetic operator of a=%d\n",-a);
     printf("For Unary Arithmetic operator of b=%d\n",-b);
