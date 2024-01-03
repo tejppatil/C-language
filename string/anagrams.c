@@ -41,4 +41,5 @@ int main()
     else
         printf("BOth strings must have equal no.of characters");
     return 0;
+    
 }
