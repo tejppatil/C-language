@@ -6,7 +6,6 @@ int main()
 {
     char s1[20], s2[20];
     int l, l1, l2, i, j,f1= 0,f2= 0;
-
     printf("Enter first string: ");
     scanf("%s", s1);  
     printf("Enter second string: ");
