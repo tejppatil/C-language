@@ -4,7 +4,7 @@ int prime(int n)
 {
     if(n<=1)
     {
-        printf("not a composite and ");
+        printf("neither a composite nor a prime");
         return 0;
     }
     else

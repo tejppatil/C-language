@@ -1,7 +1,8 @@
 //Write programs to manipulate arrays (sorting, searching, insertion, deletion).
 #include <stdio.h>
 
-void deleteElement(int a[], int *size, int position) {
+void deleteElement(int a[], int *size, int position) 
+{
     if (position<0||position>=*size) 
     {
         printf("Invalid position for deletion.\n");
