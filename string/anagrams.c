@@ -17,7 +17,6 @@ int main()
         l = l1;
         for (i=0;i<l;i++) 
         {
-            f1=0;
             for(j=0;j<l;j++) 
             {
                 if(s1[i]==s2[j]) 
